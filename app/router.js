@@ -7,6 +7,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('iterations', function() {
+    this.route('show', {path: '/:iteration-id'});
+    this.route('whiteboard', {path: '/:iteration-id/whiteboard'}, function() {
+      this.route('cards', function() {
+        this.route('show', {path: '/:card-id'});
+      });
+    });
+  });
 });
 
 export default Router;
