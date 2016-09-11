@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:whiteboard/cards/show', 'Unit | Route | whiteboard/cards/show', {
+moduleFor('route:whiteboard/story', 'Unit | Route | whiteboard/story', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

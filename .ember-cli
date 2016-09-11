@@ -6,7 +6,7 @@
     Setting `disableAnalytics` to true will prevent any data from being sent.
   */
   "disableAnalytics": false,
-  "port": "4800",
+  "port": "3000",
   "ember-cli-deploy": {
     "verbose": true,
     "progress": true

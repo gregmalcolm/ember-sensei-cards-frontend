@@ -11,9 +11,8 @@ Router.map(function() {
     this.route('show', { path: '/:iteration-id' });
   });
   this.route('whiteboard', function() {
-    this.route('cards', function() {
-      this.route('show', { path: '/:card-id' });
-    });
+    this.route('story', { path: '/stories/:story-id' });
+    this.route('lesson', { path: '/lessons/:lesson-id' });
   });
 });
 
