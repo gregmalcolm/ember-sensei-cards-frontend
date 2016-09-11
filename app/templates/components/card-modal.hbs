@@ -1,0 +1,27 @@
+{{#bs-modal body=false footer=false header=false closedAction=(action 'exit')}}
+  {{#bs-modal-header}}
+    <h4 class="modal-title">{{modelName}}-{{card.id}} {{card.title}}</h4>
+  {{/bs-modal-header}}
+  {{#bs-modal-body}}
+    <h3>Task</h3>
+    <div>
+      {{card.task}}
+    </div>
+    <h3>Guidance</h3>
+    <div>
+      {{card.guidance}}
+    </div>
+    <h3>Acceptance Criteria</h3>
+    <div>
+      {{card.acceptanceCriteria}}
+    </div>
+    <h3>Story Points</h3>
+    <div>
+      {{card.storyPoints}}
+    </div>
+    {{yield}}
+  {{/bs-modal-body}}
+  {{#bs-modal-footer as |footer|}}
+    {{#bs-button action=(action 'close' target=footer) type="primary"}}Close{{/bs-button}}
+  {{/bs-modal-footer}}
+{{/bs-modal}}

@@ -1,9 +1,4 @@
-import Ember from 'ember';
+import CardController from './card';
 
-export default Ember.Controller.extend({
-  actions: {
-    exit() {
-      this.transitionToRoute('whiteboard');
-    }
-  }
+export default CardController.extend({
 });
